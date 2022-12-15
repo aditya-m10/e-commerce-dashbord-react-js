@@ -39,7 +39,7 @@ const Updateproduct = () => {
             <input value={price} onChange={(e)=>setPrice(e.target.value)} className="inputBox" type="number" placeholder="Price" />
             <input value={category} onChange={(e)=>setCategory(e.target.value)} className="inputBox" type="text" placeholder="Category" />
             <input value={company} onChange={(e)=>setCompany(e.target.value)} className="inputBox" type="text" placeholder="Company name" />
-            <button  onClick={updateProduct} className="button-product inputBox" ><a >Update Product</a></button>
+            <button  onClick={updateProduct} className="button-product inputBox" ><a >Update </a></button>
     </div>
   )
 }

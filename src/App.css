@@ -38,15 +38,15 @@ float:right;
 }
 
 .box{
-  margin: auto;
+  margin-top: 30px;
   width: 30%;
-  padding: 10px;
+  padding-left: 35%;
 }
 .box  h3{
   margin: auto;
-
+  margin-left: center;
   text-align: center;
-    width: 63%;
+  width: 63%;
   }
 .box  h1{
     margin: auto;
@@ -121,15 +121,16 @@ margin: 8%;
 color:red;
 }
 .product {
+  margin-top: 30px;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  padding-left: 30%;
+  padding-left: 25%;
   }
 .product  h3{
+    text-align: center;
+    width: 67%;
 
-  text-align: center;
-    width: 70%;
   }
 
 .product td{
@@ -173,4 +174,10 @@ table {
   margin-bottom: 10px;
   border: 2px solid rgb(252, 184, 13);
   margin-left: 230px;
+}
+
+@media screen and (max-width: 800px) {
+  .searchbar, .inputBox .box{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }

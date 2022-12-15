@@ -21,7 +21,6 @@ function App() {
             <Route path="/add" element={<AddProduct />} />
             <Route path="/update/:id" element={<Updateproduct />} />
             <Route path="/logout" element={<h1>logout product  </h1>} />
-            <Route path="/profile" element={<h1>profile component </h1>} />
             </Route>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />}></Route>

@@ -14,7 +14,6 @@ const Nav=()=>{
             <ul className="nav-ul">
                 <li><Link to="/">Products</Link></li>
                 <li><Link to="/add">Add Products</Link></li>
-                <li><Link to="/profile">Profile</Link></li>
                 < div className="text-logout" >
                 <li >Welcome {JSON.parse(auth).name},</li>
                 <li ><Link onClick={logout} to="/login"> Logout</Link></li>

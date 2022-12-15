@@ -6,6 +6,7 @@ const Addproduct=()=>{
     const [price,setPrice]=useState("");
     const [category,setCategory]=useState("");
     const [company,setCompany]=useState("");
+    const [user,setUser]=useState("")
     const [error,setError]=useState(false)
 
     const clearFunction=()=>{
@@ -16,18 +17,19 @@ const Addproduct=()=>{
     }
 
     const addProduct=async ()=>{
+        console.log(userId)
+        setUser(userId)
         if (!name || !price || !category || !company){
             
             setError(true)
             
             return  false;
         }
-        console.log(name,price,category,userId,company)
         
 
         let result=await fetch("http://localhost:5000/addproduct",{
             method: "post",
-            body:JSON.stringify({name,price,category,userId,company}),
+            body:JSON.stringify({name,price,category,user,company}),
             headers:{
                 'Content-Type': 'application/json'
             }
